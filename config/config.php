@@ -26,7 +26,7 @@ DEFINE('PASS', $_SERVER['DB_PASSWORD']);													// database password
 $clan_name		= $_SERVER['APP_NAME'];											// your gaming clan or organization name
 
 // PAGE BANNER
-$banner_image	= './common/images/bf4-logo.png';					// your desired page banner image
+$banner_image	= './common/images/bf3-logo.png';					// your desired page banner image
 
 // BANNER LINK
 $banner_url		= $_SERVER['APP_URL'];		// where clicking on page banner will take you
