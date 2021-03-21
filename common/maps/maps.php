@@ -61,7 +61,7 @@ if(!empty($ServerID))
 }
 // or else this is a combined stats page
 else
-{	
+{
 	$Mode_q = @mysqli_query($BF3stats,"
 		SELECT `Gamemode`, SUM(`NumberofRounds`) AS TotalRounds
 		FROM `tbl_mapstats`
@@ -94,7 +94,7 @@ else
 {
 	echo '
 	<div class="subsection">
-	<br/><center><div class="embed"><img src="./common/maps/maps-played.png';
+	<br/><center><div class="embed"><img src="./common/maps/maps-played.php';
 	if(!empty($ServerID))
 	{
 		echo '?sid=' . $ServerID;
