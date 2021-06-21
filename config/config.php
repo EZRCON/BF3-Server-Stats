@@ -17,7 +17,7 @@ if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
 
 // DATABASE INFORMATION
 DEFINE('HOST', $_SERVER['DB_HOST']);													// database host address
-DEFINE('PORT', '3306');												// database port - default is 3306
+DEFINE('PORT', $_SERVER['DB_PORT']);												// database port - default is 3306
 DEFINE('NAME', $_SERVER['DB_DATABASE']);													// database name
 DEFINE('USER', $_SERVER['DB_USERNAME']);													// database user name - sometimes the same as the database name
 DEFINE('PASS', $_SERVER['DB_PASSWORD']);													// database password
