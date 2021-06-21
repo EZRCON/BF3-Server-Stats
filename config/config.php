@@ -15,6 +15,10 @@ if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
 // THE FOLLOWING INFORMATION NEEDS TO BE FILLED IN
 // Read readme.txt for help.
 
+if (!isset($_SERVER['DB_PORT'])) {
+    $_SERVER['DB_PORT'] = 3306;
+}
+
 // DATABASE INFORMATION
 DEFINE('HOST', $_SERVER['DB_HOST']);													// database host address
 DEFINE('PORT', $_SERVER['DB_PORT']);												// database port - default is 3306
