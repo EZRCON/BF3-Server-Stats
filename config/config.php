@@ -1,14 +1,5 @@
 <?php
 
-if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
-    require __DIR__ . '/../../../../vendor/autoload.php';
-
-    $dotenv = new \Dotenv\Dotenv(__DIR__ . '/../../../../');
-    $dotenv->load();
-} else {
-    die('Failed to load');
-}
-
 // BF3 Stats Page by Ty_ger07
 // https://forum.myrcon.com/showthread.php?15754
 
@@ -23,7 +14,7 @@ if (!isset($_SERVER['DB_PORT'])) {
 DEFINE('HOST', $_SERVER['DB_HOST']);													// database host address
 DEFINE('PORT', $_SERVER['DB_PORT']);												// database port - default is 3306
 DEFINE('NAME', $_SERVER['DB_DATABASE']);													// database name
-DEFINE('USER', $_SERVER['DB_USERNAME']);													// database user name - sometimes the same as the database name
+DEFINE('USER', $_SERVER['DB_USERNAME']);													// database username - sometimes the same as the database name
 DEFINE('PASS', $_SERVER['DB_PASSWORD']);													// database password
 
 // CLAN NAME
